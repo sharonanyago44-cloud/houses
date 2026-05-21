@@ -1,0 +1,229 @@
+html,body{
+    padding:0px;
+    margin: 0;
+    overflow-x: hidden;
+    box-sizing:border-box;
+    max-width: 100%;
+}
+*{
+    box-sizing: border-box;
+    max-width: 100%;
+}
+@media  (max-width: 480px){
+body{
+    font-size: smaller;
+
+}
+.header{
+    height: 500vh;
+}
+.navbar{
+    width: 100%;
+    text-align: center;
+    padding: 15px 10px;
+     border-bottom: 1px solid black;
+}
+.logo{
+    width: auto;
+    font-size: 14px;
+}
+.menu ul{
+    flex-wrap: wrap;
+    gap: 3px;
+    justify-content: center;
+}
+.menu ul li{
+    padding: 3px 7px;
+    font-size: 12px;
+}
+
+.hero h1{
+    font-size: 23px;
+    margin-top: 10%;
+}
+
+.hero h3{
+    font-size: 15px;
+}
+.introduction{
+    flex-direction: column;
+}
+.introduction h3{
+    width: 100%;
+    font-size: 21px;
+}
+.introduction p{
+    width: 100%;
+    font-size: 15px;
+}
+.images{
+    flex-direction: column;
+
+}
+.images img{
+    width: 100%;
+    height: 290px;
+    object-fit: cover;
+}
+
+}
+
+
+.header{
+    width: 100%;
+    height: 40%;
+    background-image: url("layout.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-x: hidden;
+}
+
+    .navbar{
+    width: 100%;
+    height: 5%;
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid black;
+
+    justify-content: space-between;
+
+
+}
+.logo{
+    width: 5%;
+    color:solid black;
+    font-size: 1.1rem;
+    font-weight: small;
+    letter-spacing: 1px;
+
+
+}
+.menu ul{
+    display: flex;
+    justify-content: center;
+    gap: 3px;
+    list-style: none;
+    color: black;
+    padding: 0;
+
+}
+.menu ul li{
+    
+    
+     margin: 10px;
+    padding: 5px;
+    color: antiquewhite;
+    list-style: none;
+    text-decoration: none;
+    transition: all 0.7s ease;
+    text-transform: uppercase;
+}
+
+.menu a:hover{
+    background-color:blueviolet;
+    border-radius: 6px;
+
+    
+}
+.hero{
+    color: solid black;
+    margin-top:20% ;
+    text-align: center;
+    font-weight: bold;
+    width: 100%;
+}
+.hero h1{
+    font-size: 50px;
+    margin-top: 15%px;
+    text-shadow:3px 1px blanchedalmond;
+}
+.hero h3{
+     font-size: 20px;
+    margin-top: 10%;
+    text-shadow:2px 1px blanchedalmond;
+}
+ .main-content{
+    width: 100%;
+    height: 30%;
+    background-color: white;
+    
+}
+.our-projects{
+    display: flex;
+    width: 100%;
+    flex-direction:column;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+.our projects h2,p{
+    text-align: center;
+    font-size: bold;
+    font-size: 20px;
+}
+.our projects .hero{
+    text-align: center;
+    color: brown;
+}
+
+
+
+.main-content .our h2{
+    font-style: italic;
+    text-align:start;
+    display: flex;
+    font-size: 40px;
+    font-weight:bold;
+    color: white;
+    letter-spacing: 5px;
+    height: 100%;
+    background-color: black;
+    display: inline-block;
+    border-width: 2px;
+}
+.main-content .our p{
+    color:black;
+    text-align: start;
+    font-size: 25px;
+    font-weight:lighter;
+    margin-left: 10px;
+    padding: 20px;
+    width: 60%;
+    display: inline-block
+}
+.images{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    gap: 10px;
+    padding: 10px;
+    width: 100%;
+    animation: fadeIn 1s ease-in-out;
+    transition: all 0.5s ease;
+}
+.images img{
+    width: 300px;
+    height: 250px;
+    object-fit: cover;
+    object-position: center;
+    animation: fadeIn 1s ease-in-out;
+transition:all 0.5s ease;
+
+    
+}
+
+    .minor{
+    background-color: black;
+    color: white;
+    padding: 0;
+    height: 20%;
+    width: 100%;
+}
+.footer{
+    text-align: center;
+}
+.footer p{
+    color: antiquewhite;
+    font-size: 15px;
+    font-style: italic;
+    line-height: 2;}

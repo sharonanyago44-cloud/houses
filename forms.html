@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME INTERIOR DESIGn</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     
+</head>
+<body>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: #fff;
+            color: black;
+            display: flex;
+            flex-direction: column;
+            
+        }
+        .navbar{
+            height: 20%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #ffffff;
+            border-bottom: 3px solid black;
+
+        }
+        .logo{
+    width: auto;
+    font-size: 10px;
+}
+        .logo span{
+    display: block;
+    letter-spacing: 2px;
+    color: brown;
+
+}
+.menu ul{
+    display: flex;
+
+    gap: 3px;
+    list-style: none;
+}
+.menu ul li{
+    padding: 3px  5px;
+     font-size: 20px;
+    margin: 4px;
+    transition: all 0.3s ease-in-out;
+    color: #1a1a2e;
+    text-decoration: none;
+    text-transform: uppercase;
+    
+}
+.menu a:hover{
+    background-color:cadetblue;
+    color: #d4af37;
+}
+.inquiries{
+    
+    padding: 30px 30px 10px;
+    border-bottom: 1px solid#ddd;
+    background-color: cadetblue;
+}
+.inquiries h1{
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color: #1a1a2e;
+    line-height: 1.2;
+
+}
+.inquiries p{
+    font-size: 1.0rem;
+    color:black;
+    max-width: 300px;
+    line-height: 1.5;
+}
+.form{
+    display: flex;
+    margin-left: 100px;
+
+    justify-content: center;
+    flex: 1;
+    padding: 30px 30px 40px;
+}
+.card{
+    background-color:cadetblue;
+    padding: 25px 35px;
+    width: 450px;
+    max-height: 3000px;
+    margin-left: 20px;
+
+}
+
+footer{
+
+    text-align: center;
+    width: 100%;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+}
+.footer p{
+    
+    font-size: 15px;
+    font-style: italic;
+}
+@media  (max-width: 480px){
+body{
+    font-size: smaller;
+
+}
+
+
+.navbar{
+    width: 100%;
+    text-align: center;
+    padding: 15px 10px;
+}
+.logo{
+    width: auto;
+    font-size: 14px;
+}
+.menu ul{
+    flex-wrap: wrap;
+    gap: 6px;
+    justify-content: center;
+}
+.menu ul li{
+    padding: 3px 7px;
+    font-size: 12px;
+}
+.inquiries{
+    padding: 20px 15px;
+    width: 100%;
+
+}
+.inquiries h1{
+    font-size: 1.5rem;
+}
+.form{
+    padding: 15px 10px;
+    width: 100%;
+    margin: 0;
+
+}
+.card{
+    padding: 20px 15px;
+    width: 100%;
+    margin: auto;
+    position: relative;
+}
+input, textarea,select{
+    width: 100%;
+}
+}
+    
+
+        
+    
+    
+</style>
+    
+
+     <div class="navbar">
+
+            <div class="logo">
+                <h1> AES<br> INTERIORS</h1>
+
+            </div>
+            <div class="menu">
+                <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="portfolio.html">PORTFOLIO</a></li>
+                <li><a href="about us.html">ABOUT US</a></li>
+                <li><a href="forms.html">CONTACT US</a></li>
+                </u>
+            </div>
+            
+        </div>
+        <div class="inquiries">
+
+            <h1>DESIGN<br> INQUIRIES</h1>
+            <p>Tell us about your interior design project below and we shallfollow up to schedule 
+                a meeting or phone call with you. </p>
+
+        </div>
+        <div class="form">
+            <div class="card">
+    <form id="registration-form" method="post" action="" novalidate>
+        <fieldset>
+            <legend style="text-align: center;"><h3>REGISTRATION FORM</h3></legend>
+
+    <Label>NAME</Label>
+<input id="name" type="text" name="MY NAME" value="" placeholder="Enter your name"><br><br>
+<p id="name_error" class="name_error"></p>
+    <Label>EMAIL</Label>
+<input id="email" type="email" name="MY EMAIL" value=""><br><br>
+<p id="email_error" class="email_error"></p>
+    <Label>phone number</Label>
+<input type="number" name="phone number"value= ""required="required"><br><br>
+        
+	<Label>project address</Label>
+<input type="text" name="project address"value=""required="required"><br><br>
+
+	<Label>project start date</Label>
+<input type="text" name="project start date" value=""required="required"><br><br>
+<p>PROJECT BUDGET</p>
+	<Label>50000-140000 USD</label>
+<input type="checkbox"  name="check1" value="50000-140000 USD"><br><br>
+<Label>150000+ USD</label>
+	<input type="checkbox" name="check2" value="150000+ USD"><br><br>
+<Label>300000+</Label>
+<input type="checkbox" name="check3" value="300000+ USD"><br><br>
+<label for ="description" class="mydesc"required="required"> </label><br><br>
+<textarea cols="15" rows="7" maxlength="400" id="description">Describe your project</textarea><br><br>
+
+<input type="SUBMIT" name="SUBMIT" value="SUBMIT">
+        </fieldset>
+    </form>
+</div>
+</div>
+
+
+       <footer>
+        <p> &copy;2025 AES INTERIORS.All rights reserved.<br>contact us on +256748821907</p>
+        <p> 
+         for more information   follow us on <i class="fa-brands fa-x-twitter"></i>  
+            <i class="fa-brands fa-square-instagram"></i> 
+            <i class="fa-brands fa-facebook"></i>
+        </p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
+
